@@ -1,0 +1,55 @@
+@charset "UTF-8";
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "나눔 고딕";
+  color: lightblue;
+}
+h2::after {
+  content: "안녕";
+}
+h2 span {
+  color: pink;
+}
+
+div {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "나눔 고딕";
+  color: lightblue;
+}
+div::after {
+  content: "안녕";
+}
+div span {
+  color: pink;
+}
+
+p {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "나눔 고딕";
+  color: lightblue;
+}
+p::after {
+  content: "안녕";
+}
+p span {
+  color: pink;
+}
+
+.box {
+  border: 1px dashed purple;
+}
+
+.box2 {
+  border: 5px dashed yellow;
+}
+
+.box3 {
+  border: 1px dashed black;
+}
+
+.box4 {
+  border: 1px dashed pink;
+}/*# sourceMappingURL=mixin.css.map */

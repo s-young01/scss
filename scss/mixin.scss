@@ -1,0 +1,35 @@
+// mixins 재활용
+// mixin 선언하기 @mixin
+// mixim 사용하기 @include
+// 매개변수가 없을 때@mixin 믹스인이름 { 스타일; }
+// 매개변수가 있을 때 @mixin 믹스인이름($매개변수, $매개변수...) { 스타일; }
+// div { @include 믹스인이름; }
+// div { @include 믹스인이름(인수); }
+@mixin largetext {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "나눔 고딕";
+    color: lightblue;
+    &::after {
+        content: "안녕";
+    }
+    span {
+        color: pink;
+    }
+}
+h2 {
+    @include largetext();
+}
+div {
+    @include largetext();
+}
+p {
+    @include largetext();
+}
+@mixin dash-line ($width:1px, $color:black) {
+    border: $width dashed $color;
+}
+.box { @include dash-line(1px, purple ); }
+.box2 { @include dash-line(5px, yellow ); }
+.box3 { @include dash-line(); }
+.box4 { @include dash-line($color: pink); }

@@ -1,0 +1,11 @@
+.absolute {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.fixed {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+}/*# sourceMappingURL=mixin2.css.map */

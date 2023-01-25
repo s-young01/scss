@@ -1,0 +1,19 @@
+@mixin position($p:absolute, $t:null, $b:null, $l:null, $r:null) {
+    position: $p;
+    top: $t;
+    bottom: $b;
+    left: $l;
+    right: $r;
+}
+.absolute {
+    // 키워드 인수로 설정할 값만 전달 
+    @include position($t:50px, $r:50px);
+}
+.fixed {
+    // 인수가 많아지면 가독성 위해 줄바꿈해서 사용
+    @include position(
+        $p:fixed,
+        $t:20px,
+        $l:10px
+        );
+}

@@ -1,0 +1,12 @@
+.list {
+    $w: 100px !global;
+    $h: 50px !global;
+    li {
+        width: $w;
+        height: $h;
+    }
+}
+.box {
+    width: $w;
+    height: $h;
+}
